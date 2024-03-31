@@ -1,0 +1,48 @@
+Introduction: 
+In today's digital landscape, extracting text from images is a critical task for various applications, from 
+document processing to data analysis. Leveraging the power of cloud computing, particularly 
+Amazon Web Services (AWS), offers a scalable and efficient solution for image text extraction. In this 
+project, we have developed a system that utilizes AWS S3, API Gateway, Lambda, and Amazon 
+Textract to extract text from images seamlessly. 
+Objective: 
+The primary objective of this project is to create an automated system capable of extracting text 
+from images uploaded to an AWS S3 bucket. By harnessing AWS services, we aim to streamline the 
+text extraction process, eliminate manual intervention, and enhance overall efficiency. 
+Technologies Used: 
+1. Amazon S3 (Simple Storage Service): S3 provides secure, durable, and scalable object storage. 
+We utilize S3 to store the images from which text extraction is performed. 
+2. API Gateway: API Gateway enables us to create, publish, maintain, and monitor APIs at any 
+scale. We have configured an API endpoint to trigger the text extraction process. 
+3. AWS Lambda: Lambda allows us to run code without provisioning or managing servers. We 
+deploy a Lambda function to execute the text extraction process whenever the API endpoint is 
+invoked. 
+4. Amazon Textract: Textract is a machine learning service that automatically extracts text and 
+data from scanned documents. We leverage Textract to extract text from images uploaded to S3. 
+Workflow: 
+1. Upload Image to S3: Users upload images containing text to an S3 bucket dedicated to storing 
+extractable images. 
+2. Invoke API Endpoint: Upon image upload, the user triggers the text extraction process by 
+invoking the API endpoint created using API Gateway. 
+3. Lambda Execution: The API Gateway triggers a Lambda function, which retrieves the 
+uploaded image from the S3 bucket and initiates the text extraction process using Textract. 
+4. Text Extraction: Textract analyzes the image, identifies text elements, and extracts the text 
+content. 
+5. Output Generation: The extracted text is returned as output, which can be further processed, 
+stored, or used in downstream applications. 
+Benefits: 
+Scalability: 
+AWS services offer scalability, allowing the system to handle a large volume of images and text 
+extraction requests efficiently. 
+ 
+-Automation: 
+The entire text extraction process is automated, reducing the need for manual intervention and 
+enabling seamless integration into existing workflows. 
+ 
+Accuracy: 
+Amazon Textract employs advanced machine learning algorithms to accurately extract text from 
+images, ensuring high precision even with complex layouts. 
+Conclusion: 
+By leveraging AWS services such as S3, API Gateway, Lambda, and Textract, we have developed a 
+robust system for extracting text from images. This project showcases the power of cloud computing 
+in streamlining text extraction tasks, offering scalability, automation, and accuracy. As organizations 
+increasingly rely on digital data, solutions like this play a crucial role in unlocking insights from imagebased content.
