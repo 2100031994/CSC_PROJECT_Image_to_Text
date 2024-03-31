@@ -1,2 +1,2 @@
-# CSE_PROJECT_Image_to_Text
-CSE_PROJECT
+# CSC_PROJECT_Image_to_Text
+CSC_PROJECT
